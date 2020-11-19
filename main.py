@@ -7,7 +7,7 @@ Nov. 16,2020
 import random
 import tkinter as tk
 from tkinter import messagebox
-
+from pygame import mixer
 import pygame
 
 pygame.init()
@@ -16,6 +16,10 @@ pygame.init()
 pygame.display.set_caption("Classic Snake")
 icon = pygame.image.load("snakes.png")
 pygame.display.set_icon(icon)
+
+# Background Music
+mixer.music.load("Blazer Rail.wav")
+mixer.music.play(-1)
 
 
 class cube(object):
